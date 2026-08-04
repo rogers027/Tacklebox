@@ -1,1 +1,13 @@
+.image-test {
+    width: min(400px, 100%);
+    margin: 0;
+    display: block;
+}
 
+
+
+/*This below makes the text and things start right at the very side of the page so there is no margin*/
+
+body {
+  margin: 0;
+}
