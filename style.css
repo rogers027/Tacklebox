@@ -6,8 +6,19 @@
 
 
 
-/*This below makes the text and things start right at the very side of the page so there is no margin*/
+/*This below makes the text and sthings star right at the very side of the page so there is no margin*/
 
 body {
   margin: 0;
+}
+
+/*This below removes the default space above and below paragraphs*/
+.remove-above-space {
+  margin: 0;
+}
+
+
+
+.small-text {
+  font-size: 0.9rem;
 }
