@@ -1,55 +1,57 @@
-.image-test {
-    width: min(400px, 100%);
-    margin: 0;
-    display: block;
-}
-
-
-
-/*This below makes the text and sthings star right at the very side of the page so there is no margin*/
-
-body {
-  margin: 0;
-}
-
-/*This below removes the default space above and below paragraphs*/
-.remove-above-space {
-  margin: 0;
-}
-
-
-
 .small-text {
   font-size: 0.9rem;
 }
 
-
-/*This below is for the video, makes a grid also loops the video*/
-/* Container of grid splits into 12 */
-.module-media {
-    padding: 40px 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    row-gap: 100px;
-    align-items: flex-start;
+/* This is the main site container */
+.container {
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: left;
 }
 
-/* Mobile overide to be full width */
-@media (max-width: 834px) {
-  .video-wrapper {
-    grid-column: 1 / -1;
-  }
+
+/* Each photo + information block */
+
+.photo-entry {
+    margin-bottom: 60px;
 }
 
-/* Video placement takes spaces 1 to 3 */
-.video-wrapper {
-    grid-column: 8 / span 4;  
-   /* grid-row:2 */
+/* Photo */
+
+.photo-entry img {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
-/* Video styling */
+/* Date / location / coordinates */
+
+.photo-info {
+    margin: 0 0 10px 0;
+}
+
+/* Description */
+
+.photo-description {
+    margin: 0;
+}
+
+
+
+
+.photo-entry img.portrait {
+    width: 600px;
+    max-width: 100%;
+}
+
+
 .thumb {
-    width: 100%;
+    width: 800px;
+    max-width: 100%;
     height: auto;
     display: block;
 
@@ -57,85 +59,39 @@ body {
     transform: translateZ(0);
 }
 
-/* Fade in once loaded */
-.lazyloaded {
-    opacity: 1;
-    transition: opacity 0.3s linear;
-}
-
-.photopost3wrapper {
-    grid-column: 8 / span 1;
-    width: 100%; 
-
-}
-
-.photopost4wrapper {
-    grid-column: 11 / span 1; 
-}
-
-.firstphoto{
-    grid-column: 1 / span 4; 
-    grid-row: 1;
-}
-
-.secondvideo{
-    grid-column: 7 / span 4; 
-    grid-row: 1;
-}
-
-.thirdphoto{
-    grid-column: 4/ span 1; 
-    grid-row: 2;
-}
-
-.fourthphoto{
-    grid-column: 7/ span 1; 
-    grid-row: 2;
-}
-
-.fifthphoto{
-    grid-column: 10/ span 1; 
-    grid-row: 2;
-}
-
-.sixthphoto{
-    grid-column: 1/ span 1; 
-    grid-row: 3;
-}
-
-.seventhphoto{
-    grid-column: 4/ span 1; 
-    grid-row: 3;
-}
-
-.eighthphoto{
-    grid-column: 7/ span 1; 
-    grid-row: 3;
-}
-
-.ninthphoto{
-    grid-column: 10/ span 1; 
-    grid-row: 3;
+.photo-entry video.portrait {
+    width: 600px;
+    max-width: 100%;
 }
 
 
-/* for the first photos */
-.pictureone{
-    grid-column: 5/ span 4; 
-    grid-row: 1;
+
+
+
+
+
+
+
+
+
+
+.video-gallery {
+    width: 800px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+
 }
 
-.picturetwo{
-    grid-column: 10/ span 1; 
-    grid-row: 1;
+.video-entry {
+    width: 400px;
 }
 
-.picturethree{
-    grid-column: 1/ span 2; 
-    grid-row: 2;
+.video-thumb {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    user-select: none;
 }
 
-.picturefour{
-    grid-column: 4/ span 1; 
-    grid-row: 2;
-}
