@@ -1,5 +1,11 @@
 .small-text {
   font-size: 0.9rem;
+  font-family: "potato";
+}
+
+@font-face {
+    font-family: "potato";
+    src: url("fanwood_text-webfont.woff") format("woff2");
 }
 
 /* This is the main site container */
