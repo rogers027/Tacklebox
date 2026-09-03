@@ -8,6 +8,11 @@
     src: url("fanwood_text-webfont.woff") format("woff2");
 }
 
+@font-face {
+    font-family: "apple";
+    src: url("Haskoy-ExtraLight.woff2") format("woff");
+}
+
 /* This is the main site container */
 .container {
     width: 800px;
