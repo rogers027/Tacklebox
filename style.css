@@ -13,6 +13,17 @@
     src: url("Haskoy-ExtraLight.woff2") format("woff");
 }
 
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: #7F7F7F;
+}
+
+
 /* This is the main site container */
 .container {
     width: 800px;
