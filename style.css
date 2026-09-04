@@ -24,6 +24,18 @@
 }
 
 
+.back-link {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'apple';
+    font-size: 0.75rem;
+}
+
+.back-link:hover {
+    color: #7F7F7F;
+}
+
+
 /* This is the main site container */
 .container {
     width: 800px;
